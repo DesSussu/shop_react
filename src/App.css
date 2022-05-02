@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+.App-header {
+  background-color: #fff35f;
+  min-height: 100vh;
+  display: flex;
+  font-size: 10rem;
+}
+.menu {
+  position: relative;
+  top: 0;
+}
+.menu ul {
+  display: flex;
+  gap: 100px;
+  color: #194eea;
+  list-style: none;
+}
+
+.menu li {
+  cursor: pointer;
+}
