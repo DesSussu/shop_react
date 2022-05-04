@@ -1,5 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Button from "./titulo";
+import logo from "./img/logo.png";
 function Menu() {
   return (
     <div className="menu">
@@ -18,6 +19,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Menu />
+        <img src={logo} className="logo" />
+        <Button title="SHOP NOW" />
       </header>
     </div>
   );

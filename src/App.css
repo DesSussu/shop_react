@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-size: 62.5%;
+  font-family: "Baloo Bhai 2", cursive;
+  font-family: "Nunito", sans-serif;
 }
 
 .App-header {
@@ -9,10 +11,12 @@
   min-height: 100vh;
   display: flex;
   font-size: 10rem;
+  flex-direction: column;
+  overflow: hidden;
 }
 .menu {
   position: relative;
-  top: 0;
+  margin: 2rem;
 }
 .menu ul {
   display: flex;
@@ -23,4 +27,29 @@
 
 .menu li {
   cursor: pointer;
+}
+
+.textButton {
+  -webkit-text-stroke: 2px #194eea;
+  color: transparent;
+  font-size: 35px;
+}
+
+.button {
+  position: relative;
+  width: 30rem;
+  height: 100px;
+  padding: 2px;
+  border: 2px solid #0f5af1;
+  border-radius: 1rem;
+  background-color: #feb4cd;
+  top: 20rem;
+  left: 75rem;
+}
+
+.logo {
+  position: relative;
+  max-width: 40%;
+  top: 10rem;
+  left: 60rem;
 }
