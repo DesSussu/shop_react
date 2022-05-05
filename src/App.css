@@ -36,15 +36,26 @@
 }
 
 .button {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
   position: relative;
-  width: 30rem;
-  height: 100px;
-  padding: 2px;
-  border: 2px solid #0f5af1;
-  border-radius: 1rem;
-  background-color: #feb4cd;
-  top: 20rem;
-  left: 75rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button::after {
+  content: "";
+  background-color: #dcbaff;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
 }
 
 .logo {
