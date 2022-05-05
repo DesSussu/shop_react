@@ -35,32 +35,18 @@
   font-size: 35px;
 }
 
-.button {
-  font-size: 20px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 50px 13px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
+.button--glitch {
+  border: 2px solid #2563eb;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
+  color: #2563eb;
 }
-
-.button::after {
+.button--glitch::after {
   content: "";
-  background-color: #dcbaff;
   width: 100%;
-  z-index: -1;
-  position: absolute;
   height: 100%;
-  top: 7px;
-  left: 7px;
-}
-
-.logo {
-  position: relative;
-  max-width: 40%;
-  top: 10rem;
-  left: 60rem;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+  background-color: rgb(224, 52, 216);
 }

@@ -20,7 +20,7 @@ function App() {
       <header className="App-header">
         <Menu />
         <img src={logo} className="logo" />
-        <Button title="SHOP NOW" />
+        <Button title="Link" color="glitch" />
       </header>
     </div>
   );

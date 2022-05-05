@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 
-const Button = ({ title, disabled = false }) => {
+const Button = ({ title, color, disabled = false }) => {
   return (
-    <button className="button" disabled={disabled}>
+    <button className={`button button--${color}`} disabled={disabled}>
       <div className="textButton"> {title}</div>
     </button>
   );
