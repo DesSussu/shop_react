@@ -1,26 +1,17 @@
 import "./App.css";
-import Button from "./titulo";
-import logo from "./img/logo.png";
-function Menu() {
-  return (
-    <div className="menu">
-      <ul>
-        <li>SHOP</li>
-        <li>ABOUT</li>
-        <li>CONTACT</li>
-        <li>FAQs</li>
-      </ul>
-    </div>
-  );
-}
+import Button from "./components/Button/Button";
+import logo from "./assets/img/logo.png";
+import Navbar from "./layout/NavBar/navbar.jsx";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Menu />
+        <Navbar />
         <img src={logo} className="logo" />
-        <Button title="Link" color="glitch" />
+        <div>
+          <Button title="SHOP NOW" color="glitch" />
+        </div>
       </header>
     </div>
   );
