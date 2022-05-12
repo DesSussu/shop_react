@@ -5,7 +5,7 @@ const productos = [
     id: "1",
     name: "GACHAPIN",
     price: "8 Euros",
-    photo: "/assets/img/modeloUno.png",
+    photo: "/assets/img/modeloDos.png",
   },
   {
     id: "2",
@@ -50,12 +50,14 @@ function ItemListContainer() {
       {
         // con este metodo podemos hacer render de la colección de objetos guardados y los mete en otro array.
         productos.map((prod) => {
-          <div key={prod.id} className="caja">
-            <div className="images">
-              <img src={prod.photo} />
+          return (
+            <div key={prod.id} className="caja">
+              <div className="images">
+                <img src={prod.photo} />
+              </div>
+              <div className="nombreProducto">{prod.name}</div>
             </div>
-            <div className="nombreProducto">{prod.name}</div>
-          </div>;
+          );
         })
       }
     </div>
