@@ -17,6 +17,7 @@ export default function Add() {
   return (
     <div>
       <p>{count}</p>
+
       <button onClick={sumar}>Sumar</button>
       <button onClick={restar}>Restar</button>
     </div>
