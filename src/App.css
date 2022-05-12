@@ -15,14 +15,17 @@
   overflow: hidden;
 }
 .menu {
+  display: flex;
   position: relative;
   margin: 2rem;
+  gap: 2rem;
 }
 .menu ul {
   display: flex;
-  gap: 100px;
+  gap: 10rem;
   color: #194eea;
   list-style: none;
+  margin-top: 0.5rem;
 }
 
 .menu li {
@@ -38,5 +41,6 @@
 .logo {
   position: relative;
   margin: 0 auto;
-  width: 50%;
+  width: 45%;
+  margin-top: 10rem;
 }

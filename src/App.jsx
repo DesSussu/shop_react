@@ -3,16 +3,17 @@ import Button from "./components/Button/Button";
 import logo from "./assets/img/logo.png";
 import Navbar from "./layout/NavBar/navbar.jsx";
 import Add from "./components/Button/add";
+import ItemListContainer from "./components/Button/ItemListContainer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
-        <img src={logo} className="logo" />
-      <div>
-        <Add></Add>
-      </div>
+
+        <div>
+          <ItemListContainer />
+        </div>
       </header>
     </div>
   );
