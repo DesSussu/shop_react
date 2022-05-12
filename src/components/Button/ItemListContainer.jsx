@@ -54,7 +54,7 @@ function ItemListContainer() {
             <div className="images">
               <img src={prod.photo} />
             </div>
-            <div className="nombreProducto">{}</div>
+            <div className="nombreProducto">{prod.name}</div>
           </div>;
         })
       }
