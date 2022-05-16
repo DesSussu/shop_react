@@ -1,40 +1,53 @@
 import { useEffect, useState } from "react";
-
+import gachapin from "../../assets/img/modeloUno.png";
 const productos = [
   {
     id: "1",
     name: "GACHAPIN",
     price: "8 Euros",
-    photo: "/assets/img/modeloDos.png",
+    photo: "https://i.ibb.co/BTqnKHC/tempura.png",
   },
-  {
+  /* {
     id: "2",
     name: "GAMBA",
     price: "18 Euros",
-    photo: "/assets/img/modeloDos.png",
+    photo: "https://i.ibb.co/zG4YZPs/Gachapin.png",
   },
   {
     id: "3",
     name: "BANANA",
     price: "13 Euros",
-    photo: "/assets/img/modeloUno.png",
+    photo: "https://i.ibb.co/WW6rqPB/modelo-Dos.png",
   },
   {
     id: "4",
     name: "GACHAPIN",
     price: "20 Euros",
-    photo: "/assets/img/modeloUno.png",
-  },
+    photo: gachapin,
+  },*/
 ];
 
 const task = new Promise((res, rej) => {
   setTimeout(() => {
     res(productos);
-  }, 3000);
+  }, 2000);
 });
 
 function ItemListContainer() {
   const [productos, setProductos] = useState([]); // Almacenar valores
+  const [count, setCount] = useState(0); // almacenar contador del boton
+
+  const sumar = () => {
+    setCount(count + 1);
+  };
+  const restar = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    } else {
+      alert("No puedes bajar del límite");
+    }
+  };
+
   useEffect(() => {
     task
       .then(
@@ -46,16 +59,26 @@ function ItemListContainer() {
   console.log(productos);
 
   return (
-    <div>
+    <div className="container">
       {
         // con este metodo podemos hacer render de la colección de objetos guardados y los mete en otro array.
         productos.map((prod) => {
           return (
             <div key={prod.id} className="caja">
+              <div className="interior"></div>
               <div className="images">
                 <img src={prod.photo} />
               </div>
               <div className="nombreProducto">{prod.name}</div>
+              <div className="botonesAdd">
+                <div onClick={sumar} className="add">
+                  <button> + </button>
+                </div>
+                <div className="contador">{count}</div>
+                <div onClick={restar} className="add">
+                  <button> - </button>
+                </div>
+              </div>
             </div>
           );
         })

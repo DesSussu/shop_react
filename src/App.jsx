@@ -3,7 +3,7 @@ import Button from "./components/Button/Button";
 import logo from "./assets/img/logo.png";
 import Navbar from "./layout/NavBar/navbar.jsx";
 import Add from "./components/Button/add";
-import ItemListContainer from "./components/Button/ItemListContainer";
+import ItemListContainer from "./components/ItemList/ItemListContainer";
 
 function App() {
   return (
