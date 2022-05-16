@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import gachapin from "../../assets/img/modeloUno.png";
+import ItemCount from "../ItemCount/ItemCount";
+
 const productos = [
   {
     id: "1",
@@ -35,18 +37,6 @@ const task = new Promise((res, rej) => {
 
 function ItemListContainer() {
   const [productos, setProductos] = useState([]); // Almacenar valores
-  const [count, setCount] = useState(0); // almacenar contador del boton
-
-  const sumar = () => {
-    setCount(count + 1);
-  };
-  const restar = () => {
-    if (count > 0) {
-      setCount(count - 1);
-    } else {
-      alert("No puedes bajar del límite");
-    }
-  };
 
   useEffect(() => {
     task
@@ -70,15 +60,7 @@ function ItemListContainer() {
                 <img src={prod.photo} />
               </div>
               <div className="nombreProducto">{prod.name}</div>
-              <div className="botonesAdd">
-                <div onClick={sumar} className="add">
-                  <button> + </button>
-                </div>
-                <div className="contador">{count}</div>
-                <div onClick={restar} className="add">
-                  <button> - </button>
-                </div>
-              </div>
+              <ItemCount />
             </div>
           );
         })
