@@ -2,8 +2,9 @@ import "./App.css";
 import Button from "./components/Button/Button";
 import logo from "./assets/img/logo.png";
 import Navbar from "./layout/NavBar/navbar.jsx";
-
-import ItemListContainer from "../src/layout/ItemListContainer/ItemListContainer";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import itemDetailContainer from "../src/layout/itemDetailContainer/itemDetailContainer";
+//import ItemListContainer from "../src/layout/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <header className="App-header">
         <Navbar />
         <>
-          <ItemListContainer />
+          <itemDetailContainer />
         </>
       </header>
     </div>
