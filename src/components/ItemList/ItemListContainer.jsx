@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import gachapin from "../../assets/img/modeloUno.png";
 import ItemCount from "../ItemCount/ItemCount";
-
 const productos = [
   {
     id: "1",
@@ -9,7 +8,7 @@ const productos = [
     price: "8 Euros",
     photo: "https://i.ibb.co/BTqnKHC/tempura.png",
   },
-  /* {
+  {
     id: "2",
     name: "GAMBA",
     price: "18 Euros",
@@ -26,7 +25,7 @@ const productos = [
     name: "GACHAPIN",
     price: "20 Euros",
     photo: gachapin,
-  },*/
+  },
 ];
 
 const task = new Promise((res, rej) => {
