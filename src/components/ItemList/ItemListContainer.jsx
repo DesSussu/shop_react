@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import gachapin from "../../assets/img/modeloUno.png";
-import ItemCount from "../ItemCount/ItemCount";
+import Button from "../Button/Button";
+//import ItemCount from "../ItemCount/ItemCount";
 const productos = [
   {
     id: "1",
@@ -59,7 +60,7 @@ function ItemListContainer() {
                 <img src={prod.photo} />
               </div>
               <div className="nombreProducto">{prod.name}</div>
-              <ItemCount />
+              <Button title="+info" color="glitch" />
             </div>
           );
         })

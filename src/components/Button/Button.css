@@ -13,6 +13,7 @@ button span {
   position: relative;
   color: #2563eb;
   border-radius: 10px;
+  z-index: 11;
 }
 .button--glitch::after {
   content: "";
