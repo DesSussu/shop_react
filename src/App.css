@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #fff35f;
+  background-color: #feb4cd;
   min-height: 100vh;
   display: flex;
   font-size: 10rem;
@@ -15,14 +15,17 @@
   overflow: hidden;
 }
 .menu {
+  display: flex;
   position: relative;
   margin: 2rem;
+  gap: 2rem;
 }
 .menu ul {
   display: flex;
-  gap: 100px;
+  gap: 10rem;
   color: #194eea;
   list-style: none;
+  margin-top: 0.5rem;
 }
 
 .menu li {
@@ -33,4 +36,90 @@
   -webkit-text-stroke: 2px #194eea;
   color: transparent;
   font-size: 35px;
+}
+
+.logo {
+  position: relative;
+  margin: 0 auto;
+  width: 45%;
+  margin-top: 10rem;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  gap: 3.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.caja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff35f;
+  width: 53.4rem;
+  height: 58.4rem;
+  border-radius: 63px;
+  margin-top: 8.7rem;
+}
+
+.caja::after {
+  content: "";
+  border: 3px solid #194eea;
+  width: 53.4rem;
+  height: 58.4rem;
+  z-index: 1;
+  position: absolute;
+  border-radius: 63px;
+  margin-left: 20px;
+}
+.botonesAdd {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+.add {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ff5ff7;
+  z-index: 2;
+}
+
+.add::after {
+  content: "";
+  position: absolute;
+  border: 3px solid #194eea;
+  width: 75px;
+  height: 75px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  margin-left: -70px;
+}
+
+button {
+  position: relative;
+  color: #194eea;
+  font-size: 30px;
+  top: 7px;
+  right: 8px;
+}
+.contador {
+  position: relative;
+  width: 206px;
+  height: 52px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  text-align: center;
+
+  font-size: 40px;
 }

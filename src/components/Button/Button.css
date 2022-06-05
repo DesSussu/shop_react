@@ -25,3 +25,24 @@ button span {
   left: 16px;
   z-index: 0;
 }
+
+.button--glitchDos {
+  background-color: #fff35f;
+  position: relative;
+  color: #2563eb;
+  border-radius: 10px;
+  z-index: 10;
+  width: 200px;
+  height: 65px;
+}
+.button--glitchDos::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 3px solid #2563eb;
+  border-radius: 10px;
+  position: absolute;
+  top: -6px;
+  left: 16px;
+  z-index: 0;
+}
