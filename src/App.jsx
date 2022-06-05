@@ -1,14 +1,21 @@
 import "./App.css";
 import Home from "../src/pages/Home";
+import Navbar from "../src/layout/NavBar/navbar";
+import ItemListContainer from "../src/layout/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "../src/layout/itemDetailContainer/ItemDetailContainer";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-//import itemDetailContainer from "../src/layout/itemDetailContainer/itemDetailContainer";
-//import ItemListContainer from "../src/layout/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<ItemListContainer />} />
+        <Route path="/detail/:detalleId" element={<ItemDetailContainer />} />
+        <Route path="/*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

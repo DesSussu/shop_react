@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import itemDetail from "../itemDetailContainer/itemDetail";
+import ItemDetail from "../../components/ItemDetail/ItemDetail";
 import { getFetch } from "../../helpers/getFecth";
 
 const ItemDetailContainer = () => {
@@ -16,7 +16,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-      <itemDetail producto={producto} />
+      <ItemDetail producto={producto} />
     </div>
   );
 };

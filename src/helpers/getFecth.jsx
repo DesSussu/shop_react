@@ -25,6 +25,7 @@ export const getFetch = (id) => {
       const query = id
         ? productos.find((producto) => producto.id === id)
         : productos;
+      console.log(query);
       resolve(query);
     }, 2000);
   });

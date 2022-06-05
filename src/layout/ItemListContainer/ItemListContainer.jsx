@@ -18,16 +18,17 @@ function ItemListContainer() {
         .finally(() => console.log("tarea finalizada"));
     } else {
       getFetch()
-        .then((respuesta) => setProductos(respuesta))
+        .then((respuesta) => {
+          setProductos(respuesta);
+          console.log("la respuesta es", respuesta);
+        })
         .catch((err) => console.log(err))
         .finally(() => console.log("tarea finalizada"));
     }
   }, [id]);
 
   return (
-    <div>
-      <ItemList productos={productos} />
-    </div>
+    <div>{productos.length > 0 && <ItemList productos={productos} />}</div>
   );
 }
 
