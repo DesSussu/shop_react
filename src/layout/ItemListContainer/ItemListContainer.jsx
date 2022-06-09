@@ -20,7 +20,7 @@ function ItemListContainer() {
 
   //esta si que va en el itemListContainer, traemos toda la colección.
 
-  useEffect(() => {
+  /*useEffect(() => {
     const db = getFirestore();
 
     const queryCollection = collection(db, "items");
@@ -31,7 +31,7 @@ function ItemListContainer() {
       .catch((err) => console.log(err))
       .finally(() => console.log("tarea finalizada"));
   }, []);
-  console.log(productos);
+  console.log(productos);*/
   /*
 // esta iria en el itemListContainer 
   useEffect(() => {
@@ -43,7 +43,7 @@ function ItemListContainer() {
   }, []);
   ;*/
 
-  /*useEffect(() => {
+  useEffect(() => {
     if (id) {
       getFetch()
         .then((respuesta) =>
@@ -57,7 +57,7 @@ function ItemListContainer() {
         .catch((err) => console.log(err))
         .finally(() => console.log("tarea finalizada"));
     }
-  }, [id]);*/
+  }, [id]);
 
   return (
     <div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-function ItemCount() {
-  const [count, setCount] = useState(0); // almacenar contador del boton
+function ItemCount({ item, onAdd }) {
+  const [count, setCount] = useState(1); // almacenar contador del boton
   const sumar = () => {
     setCount(count + 1);
   };
@@ -14,13 +14,31 @@ function ItemCount() {
   };
   return (
     <div className="botonesAdd">
-      <div onClick={sumar} className="add">
-        <button> + </button>
-      </div>
+      <button
+        onClick={sumar}
+        className="add"
+        disabled={count === item.stock ? true : false}
+      >
+        +
+      </button>
+
       <div className="contador">{count}</div>
-      <div onClick={restar} className="add">
-        <button> - </button>
-      </div>
+
+      <button
+        onClick={restar}
+        className="add"
+        disabled={count === 1 ? true : false}
+      >
+        -
+      </button>
+      <button
+        onClick={() => {
+          onAdd(item, count);
+        }}
+        className="buttonDos"
+      >
+        Add to cart
+      </button>
     </div>
   );
 }

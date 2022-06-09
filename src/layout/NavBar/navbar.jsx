@@ -3,6 +3,7 @@ import "../../App.css";
 import "../../index.css";
 import home from "../../assets/img/home.svg";
 import { Link } from "react-router-dom";
+import CartWidget from "../../../src/components/CartWidget/CartWidget";
 
 function Navbar() {
   return (
@@ -18,6 +19,7 @@ function Navbar() {
         <li>CONTACT</li>
         <li>FAQs</li>
       </ul>
+      <CartWidget />
     </div>
   );
 }

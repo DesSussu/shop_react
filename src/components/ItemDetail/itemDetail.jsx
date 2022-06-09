@@ -1,6 +1,11 @@
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetail = ({ producto }) => {
+  const cartContext = useContext(CartContext);
+  const { addToCart } = cartContext;
+
   return (
     <div>
       <div>
@@ -10,7 +15,7 @@ const ItemDetail = ({ producto }) => {
         <h1>{producto.name}</h1>
         <h2>{producto.categoria}</h2>
         <p>{producto.price}</p>
-        <ItemCount />
+        <ItemCount item={producto} onAdd={addToCart} />
       </div>
     </div>
   );
