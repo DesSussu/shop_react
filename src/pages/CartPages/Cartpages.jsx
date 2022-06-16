@@ -1,10 +1,9 @@
 import React from "react";
 import CartListItem from "../../components/CartListItem/CartListItem";
-
+import "../CartPages/Cartpages.css";
 const CartPage = () => {
   return (
     <main>
-      <h1>Tu carrito de compras</h1>
       <CartListItem />
     </main>
   );

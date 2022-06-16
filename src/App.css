@@ -51,21 +51,6 @@
   border-radius: 63px;
   margin-left: 20px;
 }
-.botonesAdd {
-  display: flex;
-  gap: 20px;
-  cursor: pointer;
-}
-.add {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background: #ff5ff7;
-  z-index: 2;
-}
 
 /*.add::after {
   content: "";
@@ -87,19 +72,15 @@ button {
   top: 7px;
   right: 8px;
 }
-.contador {
-  position: relative;
-  width: 206px;
-  height: 52px;
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255);
-  z-index: 10;
-  text-align: center;
 
-  font-size: 40px;
-}
 .buttonDos {
   margin: 20px;
   width: 180px;
   border: 1px solid black;
+}
+p {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-size: 50px;
 }

@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import CartItem from "../CartItem/CartItem";
-
+import "../CartListItem/CartListItem.css";
 const CartListItem = () => {
   const cartContext = useContext(CartContext);
   const { cart, deteleCartById, deleteCart } = cartContext;
   console.log(cart);
   return (
-    <div>
+    <div className="cartContainer">
       {cart ? (
         cart.map((product) => {
           return (
@@ -22,9 +22,11 @@ const CartListItem = () => {
         <p>cargando </p>
       )}
       {cart.length ? (
-        <button onClick={deleteCart}>Vaciar Carrito</button>
+        <button onClick={deleteCart} className="empty">
+          Vaciar Carrito
+        </button>
       ) : (
-        <p>No hay productos </p>
+        <p className="cartEmpty">No hay productos </p>
       )}
     </div>
   );

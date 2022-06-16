@@ -1,0 +1,27 @@
+article {
+  display: flex;
+}
+.oneProduct {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.info {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.Photo {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: #feb4cd;
+}
+.delete {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 220px;
+}

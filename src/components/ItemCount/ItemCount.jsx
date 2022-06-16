@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "../ItemCount/itemCount.css";
 function ItemCount({ stock, onAdd }) {
   const [count, setCount] = useState(1); // almacenar contador del boton
   const sumar = () => {
@@ -12,6 +12,7 @@ function ItemCount({ stock, onAdd }) {
       alert("No puedes bajar del límite");
     }
   };
+
   return (
     <div className="botonesAdd">
       <div onClick={sumar} className="add">
@@ -22,7 +23,7 @@ function ItemCount({ stock, onAdd }) {
         <button> - </button>
         <button
           onClick={() => {
-            onAdd(item, qty);
+            onAdd(stock);
           }}
           className="buttonCart"
         >
