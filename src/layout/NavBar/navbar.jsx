@@ -1,8 +1,9 @@
 import React from "react";
-import "../../App.css";
-import "../../index.css";
+
 import home from "../../assets/img/home.svg";
 import { Link } from "react-router-dom";
+import CartWidget from "../../components/CartWidget/CartWidget";
+import "../NavBar/Navbar.css";
 
 function Navbar() {
   return (
@@ -18,6 +19,9 @@ function Navbar() {
         <li>CONTACT</li>
         <li>FAQs</li>
       </ul>
+      <Link to="/cart">
+        <CartWidget />
+      </Link>
     </div>
   );
 }

@@ -1,8 +1,6 @@
-import "../../src/App.css";
+import "../pages/styles/Home.css";
 import Button from "../components/Button/Button";
-import Navbar from "../layout/NavBar/navbar";
 import logo from "../assets/img/logo.svg";
-import ItemListContainer from "../layout/ItemListContainer/ItemListContainer";
 
 function Home() {
   return (

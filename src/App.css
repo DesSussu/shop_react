@@ -4,32 +4,7 @@
   font-size: 62.5%;
   font-family: "Baloo Bhai 2", cursive;
   font-family: "Nunito", sans-serif;
-}
-
-.App-header {
-  background-color: #feb4cd;
-  min-height: 100vh;
-  display: flex;
-  font-size: 10rem;
-  flex-direction: column;
-  overflow: hidden;
-}
-.menu {
-  display: flex;
-  position: relative;
-  margin: 2rem;
-  gap: 2rem;
-}
-.menu ul {
-  display: flex;
-  gap: 10rem;
-  color: #194eea;
-  list-style: none;
-  margin-top: 0.5rem;
-}
-
-.menu li {
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .textButton {
@@ -92,7 +67,7 @@
   z-index: 2;
 }
 
-.add::after {
+/*.add::after {
   content: "";
   position: absolute;
   border: 3px solid #194eea;
@@ -103,7 +78,7 @@
   border-radius: 50%;
   z-index: 1;
   margin-left: -70px;
-}
+}*/
 
 button {
   position: relative;
@@ -122,4 +97,9 @@ button {
   text-align: center;
 
   font-size: 40px;
+}
+.buttonDos {
+  margin: 20px;
+  width: 180px;
+  border: 1px solid black;
 }

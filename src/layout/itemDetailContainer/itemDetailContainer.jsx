@@ -1,17 +1,19 @@
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../../components/ItemDetail/itemDetail";
-import { getFetch } from "../../helpers/getFecth";
 
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState({});
   const { id } = useParams();
 
   useEffect(() => {
-    getFetch(id)
-      .then((respuesta) => setProducto(respuesta))
+    const db = getFirestore();
+    const dbQuery = doc(db, "items", id);
+    getDoc(dbQuery)
+      .then((resp) => setProducto({ id: resp.id, ...resp.data() }))
       .catch((err) => console.log(err))
-      .finally(() => console.log("detalle acabado"));
+      .finally(() => console.log("Tarea finalizada en detail"));
   }, []);
 
   return (

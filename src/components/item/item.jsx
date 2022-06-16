@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../../App.css";
 import Button from "../Button/Button";
+
 const Item = ({ prod }) => {
   console.log(prod);
   return (

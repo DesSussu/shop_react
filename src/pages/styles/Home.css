@@ -1,0 +1,13 @@
+.App {
+  background-color: #fff35f;
+  height: 100vh;
+}
+
+.App-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App-header img {
+  width: 40%;
+}
