@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getFetch } from "../../helpers/getFecth";
+//import { getFetch } from "../../helpers/getFecth";
 import { useParams } from "react-router-dom";
 import {
   getFirestore,
@@ -11,6 +11,7 @@ import {
   where,
 } from "firebase/firestore";
 import ItemList from "../../components/ItemList/itemList";
+import "../ItemListContainer/ItemListContainer.css";
 
 function ItemListContainer() {
   const [productos, setProductos] = useState([]); // Almacenar valores
@@ -18,49 +19,23 @@ function ItemListContainer() {
 
   const { id } = useParams();
 
-  //esta si que va en el itemListContainer, traemos toda la colección.
-
-  /*useEffect(() => {
+  useEffect(() => {
     const db = getFirestore();
-
     const queryCollection = collection(db, "items");
-    getDocs(queryCollection)
+    const queryCollectionFilter = id
+      ? query(queryCollection, where("categoria", "==", id))
+      : queryCollection;
+
+    getDocs(queryCollectionFilter)
       .then((resp) =>
         setProductos(resp.docs.map((item) => ({ id: item.id, ...item.data() })))
       )
       .catch((err) => console.log(err))
-      .finally(() => console.log("tarea finalizada"));
-  }, []);
-  console.log(productos);*/
-  /*
-// esta iria en el itemListContainer 
-  useEffect(() => {
-    const db = getFirestore();
-    const dbQuery = doc(db, "items", "FhUvNLNikra4RKCkdftZ");
-    getDoc(dbQuery).then((resp) =>
-      setProducto({ id: resp.id, ...resp.data() })
-    );
-  }, []);
-  ;*/
-
-  useEffect(() => {
-    if (id) {
-      getFetch()
-        .then((respuesta) =>
-          setProductos(respuesta.filter((prods) => prods.categoria === id))
-        )
-        .catch((err) => console.log(err))
-        .finally(() => console.log("tarea finalizada"));
-    } else {
-      getFetch()
-        .then((respuesta) => setProductos(respuesta))
-        .catch((err) => console.log(err))
-        .finally(() => console.log("tarea finalizada"));
-    }
+      .finally(() => console.log("Tarea finalizada en container"));
   }, [id]);
 
   return (
-    <div>
+    <div className="Products">
       <ItemList productos={productos} />
     </div>
   );

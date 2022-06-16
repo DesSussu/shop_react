@@ -10,11 +10,22 @@ const CartProvider = (props) => {
     console.log(cart);
   };
 
+  const deteleCartById = (id) => {
+    const newCart = cart.filter((el) => el.id !== id);
+    setCart(newCart);
+  };
+
+  const deleteCart = () => {
+    setCart([]);
+  };
+
   return (
     <CartContext.Provider
       value={{
         cart,
         addToCart,
+        deteleCartById,
+        deleteCart,
       }}
     >
       {props.children}

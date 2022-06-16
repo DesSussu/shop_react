@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import home from "../../assets/img/home.svg";
+import cartimg from "../../assets/img/cart.png";
 import { CartContext } from "../../context/CartContext";
 const CartWidget = () => {
   const cartContext = useContext(CartContext);
@@ -7,7 +7,7 @@ const CartWidget = () => {
 
   return (
     <div>
-      <img src={home} alt="" />
+      <img src={cartimg} />
 
       <span> {cart.length}</span>
     </div>
