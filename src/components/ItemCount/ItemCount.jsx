@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../ItemCount/itemCount.css";
-function ItemCount({ stock, onAdd }) {
+function ItemCount({ item, onAdd }) {
   const [count, setCount] = useState(1); // almacenar contador del boton
   const sumar = () => {
     setCount(count + 1);
@@ -23,7 +23,7 @@ function ItemCount({ stock, onAdd }) {
         <button> - </button>
         <button
           onClick={() => {
-            onAdd(stock);
+            onAdd(item, count);
           }}
           className="buttonCart"
         >

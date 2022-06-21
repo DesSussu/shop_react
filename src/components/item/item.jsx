@@ -11,7 +11,6 @@ const Item = ({ prod }) => {
         <div className="images">
           <img src={prod.photo} />
         </div>
-        <div className="nombreProducto">{prod.name}</div>
         <Link to={`/detail/${prod.id}`}>
           <Button title="+ info" color="glitchDos" />
         </Link>

@@ -12,8 +12,8 @@ const CartListItem = () => {
         cart.map((product) => {
           return (
             <CartItem
-              key={product.newItem.id}
-              item={product.newItem}
+              key={product.id}
+              item={product}
               deleteCartById={deteleCartById}
             />
           );
