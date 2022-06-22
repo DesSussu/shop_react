@@ -2,7 +2,7 @@
 E-commerce ficticio, proyecto final CoderHouse.
 
 ## Hola, soy Desi! :blush:
-Este es mi primer proyecto con React. Abajo os dejo toda la información sobre mi proyecto. Sientete libre de usarlo para mejorarlo o dadme cualquier feedback. 
+Este es mi primer proyecto con React. Os dejo toda la información sobre mi proyecto. Sientete libre de usarlo para mejorarlo o dadme cualquier feedback. 
 
 Gracias!! :yellow_heart:
 
