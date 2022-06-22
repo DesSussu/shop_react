@@ -7,7 +7,7 @@ Mi email es desiremrv@gmail.com.
 Gracias!! 
 
 
-En este proyecto se ha usado **HTML**, **CSS**y **React**.
+En este proyecto se ha usado **HTML**, **CSS** y **React**.
 
 
 
