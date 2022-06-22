@@ -6,19 +6,19 @@ const CartItem = ({ item, deleteCartById }) => {
       <div className="oneProduct">
         <div className="Photo">
           <img src={item.photo} />
-          <div onClick={() => deleteCartById(item.id)} className="delete">
-            <button>delete</button>
-          </div>
         </div>
         <div className="info">
           <h2>{item.name}</h2>
           <span>{item.price}Euros</span>
           <span>
-            <strong>Cantidad:</strong> {item.stock}
+            <strong>Cantidad:</strong> {item.qty}
           </span>
           <span>
-            <strong>Total:</strong> {item.stock * item.price} Euros
+            <strong>Total:</strong> {item.qty * item.price} Euros
           </span>
+          <div onClick={() => deleteCartById(item.id)} className="delete">
+            <button>delete</button>
+          </div>
         </div>
       </div>
     </article>

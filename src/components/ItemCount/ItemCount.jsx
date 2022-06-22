@@ -21,6 +21,8 @@ function ItemCount({ item, onAdd }) {
       <div className="contador">{count}</div>
       <div onClick={restar} className="add">
         <button> - </button>
+      </div>
+      <div className="addcart">
         <button
           onClick={() => {
             onAdd(item, count);

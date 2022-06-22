@@ -2,6 +2,9 @@
   display: flex;
   gap: 20px;
   cursor: pointer;
+  position: absolute;
+  bottom: 200px;
+  left: 40px;
 }
 .add {
   position: relative;

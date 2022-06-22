@@ -13,10 +13,10 @@ const ItemDetail = ({ producto }) => {
       </div>
       <div className="detailText">
         <h1>{producto.name}</h1>
-        <h2>{producto.category}</h2>
-        <p>{producto.price}</p>
-        <ItemCount item={producto} onAdd={addToCart} />
+        <p>{producto.price} Euros</p>
+        <p>{producto.stock} Unidades</p>
       </div>
+      <ItemCount item={producto} onAdd={addToCart} />
     </div>
   );
 };

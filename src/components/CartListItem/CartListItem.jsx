@@ -83,19 +83,16 @@ const CartListItem = () => {
 
       <form noValidate autoComplete="off">
         <input
-          id="standard-basic"
           label="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
-          id="standard-basic"
           label="Telephone"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
         />
         <input
-          id="standard-basic"
           label="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -103,7 +100,7 @@ const CartListItem = () => {
       </form>
 
       <button onClick={generateOrder}>Realizar compra</button>
-      <h2>El precio total es: {precioTotal()}</h2>
+      <h2 className="total">El precio total es: {precioTotal()}</h2>
       {cart.length ? (
         <button onClick={deleteCart} className="empty">
           Vaciar Carrito

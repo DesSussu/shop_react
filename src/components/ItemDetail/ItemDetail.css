@@ -14,13 +14,17 @@
   width: 100%;
 }
 .detailText {
-  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+
   position: relative;
-  right: 600px;
-  bottom: 300px;
+  left: 500px;
+  bottom: 500px;
 }
 .detailText h1 {
-  font-size: 40px;
+  font-size: 80px;
 }
 
 .detailText h2 {
