@@ -32,6 +32,10 @@ const CartProvider = (props) => {
     setCart([]);
   };
 
+  const precioTotal = () => {
+    return cart.reduce((contador, prod) => contador + prod.qty * prod.price, 0);
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -39,6 +43,7 @@ const CartProvider = (props) => {
         addToCart,
         deteleCartById,
         deleteCart,
+        precioTotal,
       }}
     >
       {props.children}
