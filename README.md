@@ -11,7 +11,9 @@ Gracias!! :yellow_heart:
 
 
 
-:point_right: Preview del proyecto : 
+:point_right: Preview del proyecto :
+
+![Alt Text](https://media.giphy.com/media/RcOwqdo54rHDz7J6VU/giphy.gif)
 
 :point_right: Demo Link: https://pumpunch.netlify.app/
 
