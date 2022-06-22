@@ -1,19 +1,19 @@
-## **PUM PUNCH E-COMMERCE**
-E-commerce ficticio, proyecto final CoderHouse
+ ## :star2:  **PUM PUNCH E-COMMERCE**:star2:
+E-commerce ficticio, proyecto final CoderHouse.
 
-## Hola soy Desi! :blush:
+## Hola, soy Desi! :blush:
 Este es mi primer proyecto con React. Abajo os dejo toda la información sobre mi proyecto. Sientete libre de usarlo para mejorarlo o dadme cualquier feedback. 
-Mi email es desiremrv@gmail.com. 
-Gracias!! 
+
+Gracias!! :yellow_heart:
 
 
-En este proyecto se ha usado **HTML**, **CSS** y **React**.
+:information_source: En este proyecto se ha usado **HTML**, **CSS** y **React**.
 
 
 
-Preview del proyecto : 
+:point_right: Preview del proyecto : 
 
-Demo Link: https://pumpunch.netlify.app/
+:point_right: Demo Link: https://pumpunch.netlify.app/
 
 
 
